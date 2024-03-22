@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #e2e2e2;
+    color: #000000;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.palindrome-div-1 {
+    width: min(100vw, 450px);
+    min-height: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.palindrome-logo {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.palindrome-title {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.palindrome-div-2 {
+    width: min(100vw, 450px);
+    min-height: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #111111;
+    box-shadow: 0 6px 6px #2b2b2b;
+}
+
+label {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.check-palindrome {
+    width: 90px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e2e2e2;
+    color: #000000;
+    cursor: pointer;
+}
+
+.input-palindrome {
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid #e2e2e2;
+    background: #111111;
+    color: #ffffff;
+}
+
+.input-palindrome:focus {
+    border-bottom: 3px solid #afafaf;
+}
+
+.input-palindrome::placeholder {
+    text-align: center;
+}
+
+.result-palindrome {
+    overflow-y: auto;
+    word-wrap: break-word;
+    min-height: 50px;
+    color: #ffffff;
+}
+
+.hidden {
+    display: none;
+}
+
+.palindrome-div-3 {
+    width: min(100vw, 450px);
+    font-size: 1.3rem;
+    min-height: 140px;
+    background-color: #979797;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.palindrome-definition {
+    vertical-align: middle;
+    text-align: center;
+}
