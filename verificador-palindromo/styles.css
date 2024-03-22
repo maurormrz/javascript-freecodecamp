@@ -60,7 +60,7 @@ body {
 label {
     color: #ffffff;
     margin-bottom: 20px;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .check-palindrome {
@@ -93,6 +93,12 @@ label {
     text-align: center;
 }
 
+.user-input {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
 .result-palindrome {
     overflow-y: auto;
     word-wrap: break-word;
@@ -106,7 +112,7 @@ label {
 
 .palindrome-div-3 {
     width: min(100vw, 450px);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     min-height: 140px;
     background-color: #979797;
     margin-top: 20px;
