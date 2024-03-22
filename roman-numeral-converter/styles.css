@@ -1,0 +1,129 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 50px 20px;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    background-color: #333333;
+    color: #cccccc;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0 35px 0;
+}
+
+.converter-div-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.converter-logo {
+    height: 100px;
+    margin: 0 20px 0 20px;
+}
+
+.converter-title {
+    text-align: center;
+    margin: 20px auto 30px auto;
+    max-width: 350px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #eeeeee;
+}
+
+.converter-form {
+    color: #aaaaaa;
+    margin: auto 25px;
+    padding: 15px auto;
+    border: 3px solid #444444;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    background-color: #222222;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: 0 none;
+    height: 100%;
+    padding: 25px;
+    margin: 10px 20px;
+}
+
+label {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input:focus-visible,
+button:focus-visible {
+    outline: 3px solid #111111;
+}
+
+.converter-input {
+    display: block;
+    font-size: 2.5rem;
+    width: 100%;
+    height: 60px;
+    padding: 6px 12px;
+    margin: 10px 0;
+    line-height: 1.4;
+    color: white;
+    background-color: #444444;
+    border: 1px solid #666666;
+    border-radius: 5px;
+}
+
+.converter-btn {
+    cursor: pointer;
+    margin-top: 15px;
+    text-decoration: none;
+    background-image: linear-gradient(#2e2e2e, #3a3a3a);
+    border: 3px solid #3a3a3a;
+    padding: 10px 16px;
+    font-size: 23px;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+}
+
+.converter-output {
+    color: #cccccc;
+    background-color: #444444;
+    border: 3px solid #666666;
+    font-size: 2.5rem;
+    width: 90%;
+    max-width: 500px;
+    min-height: 55px;
+    padding: 15px;
+    overflow-wrap: break-word;
+    text-align: center;
+    border-radius: 5px;
+    margin: 25px auto 25px;
+}
+
+.alert {
+    font-size: 2rem;
+    background-color: #ffcccc;
+    border: 3px solid #cc0000;
+    color: #cc0000;
+    border-radius: 5px;
+    margin: 25px auto 25px;
+}
+
+.hidden {
+    display: none;
+}
