@@ -1,8 +1,8 @@
-const userInput = document.getElementById('text-input');
-const checkPalindromeBtn = document.getElementById('check-btn');
-const resultDiv = document.getElementById('result');
+const textPalindrome = document.getElementById('text-input');
+const btnPalindrome = document.getElementById('check-btn');
+const resultPalindrome = document.getElementById('result');
 
-const checkForPalindrome = input => {
+const checkPalindrome = input => {
     const originalInput = input;
 
     if (input === '') {
@@ -10,28 +10,28 @@ const checkForPalindrome = input => {
         return;
     }
 
-    resultDiv.replaceChildren();
+    resultPalindrome.replaceChildren();
 
-    const lowerCaseStr = input.replace(/[^A-Za-z0-9]/gi, '').toLowerCase();
-    let resultMsg = `<strong>${originalInput}</strong> ${lowerCaseStr === [...lowerCaseStr].reverse().join('') ? 'is' : 'is not'
+    const lowerCaseString = input.replace(/[^A-Za-z0-9]/gi, '').toLowerCase();
+    let resultMsg = `<strong>${originalInput}</strong> ${lowerCaseString === [...lowerCaseString].reverse().join('') ? 'is' : 'is not'
         } a palindrome.`;
 
-    const pTag = document.createElement('p');
-    pTag.className = 'user-input';
-    pTag.innerHTML = resultMsg;
-    resultDiv.appendChild(pTag);
+    const resultUser = document.createElement('p');
+    resultUser.className = 'user-input';
+    resultUser.innerHTML = resultMsg;
+    resultPalindrome.appendChild(resultUser);
 
-    resultDiv.classList.remove('hidden');
+    resultPalindrome.classList.remove('hidden');
 };
 
-checkPalindromeBtn.addEventListener('click', () => {
-    checkForPalindrome(userInput.value);
-    userInput.value = '';
+btnPalindrome.addEventListener('click', () => {
+    checkPalindrome(textPalindrome.value);
+    textPalindrome.value = '';
 });
 
-userInput.addEventListener('keydown', e => {
+textPalindrome.addEventListener('keydown', e => {
     if (e.key === 'Enter') {
-        checkForPalindrome(userInput.value);
-        userInput.value = '';
+        checkPalindrome(textPalindrome.value);
+        textPalindrome.value = '';
     }
 });
