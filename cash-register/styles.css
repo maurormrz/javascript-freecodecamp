@@ -1,4 +1,4 @@
-*,
+/* *,
 ::before,
 ::after {
     padding: 0;
@@ -21,65 +21,49 @@ body {
     align-items: center;
     justify-content: center;
     margin: 35px 0 35px 0;
-}
+} */
+
 
 /* styles.css */
 
-/* Estilos básicos para la caja registradora */
+/* Estilos generales */
 .cash-register {
-    background-color: #f5f5f5;
-    border: 2px solid #000;
-    border-radius: 10px;
-    width: 400px;
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Ancho de la caja registradora */
+    border: 2px solid #000; /* Borde negro */
+    padding: 20px; /* Espaciado interno */
 }
 
-/* Estilos para el área superior de la caja registradora */
 .top-cash-register {
-    background-color: #eee;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    text-align: center; /* Centrar contenido */
+    margin-bottom: 20px; /* Espaciado inferior */
 }
 
 .price-screen {
-    font-size: 28px;
-    font-weight: bold;
-    margin: 0;
-    color: #333;
+    border: 1px solid #000; /* Borde de la pantalla de precios */
+    height: 50px; /* Altura de la pantalla de precios */
+    width: 100%; /* Ancho al 100% del contenedor */
 }
 
-/* Estilos para los botones de la caja registradora */
+.body-cash-register {
+    display: flex; /* Utilizar flexbox para alinear elementos internos */
+}
+
 .cash-register-buttons {
     display: grid;
-    grid-template-columns: repeat(3, 30px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin-bottom: 10px;
 }
 
 .cash-register-buttons button {
-    padding: 15px 0;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    width: 30px; /* Ancho del botón */
+    height: 30px; /* Altura del botón */
+    margin: 2px; /* Espaciado entre botones */
 }
 
-.cash-register-buttons button:hover {
-    background-color: #0056b3;
-}
-
-/* Estilos para el área del cajón de efectivo */
 .cash-drawer-display {
-    background-color: #ccc;
-    height: 150px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
+    border: 1px solid #000; /* Borde de la pantalla de caja */
+    height: 121px; /* Altura de la pantalla de caja */
+    width: 255px; /* Ancho de la pantalla de caja */
+    margin-left: auto; /* Mover la pantalla de caja hacia la derecha */
 }
