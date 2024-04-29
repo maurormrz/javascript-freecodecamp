@@ -15,6 +15,11 @@ body {
   color: #000000;
 }
 
+.cash-register-logo {
+  height: 150px;
+  margin: 0 20px 0 20px;
+}
+
 h1 {
   font-size: 2.5rem;
   margin: 20px 0;
@@ -86,10 +91,13 @@ label {
   height: 50px;
   width: 100%;
   background-color: #ffffff;
+  line-height: 50px;
 }
 
 .body-cash-register {
   display: flex;
+  flex: 1;
+  align-items: flex-start;
 }
 
 .cash-register-buttons {
@@ -107,8 +115,13 @@ label {
 
 .cash-drawer-display {
   border: 1px solid #000;
-  height: 121.5px;
+  height: 250px;
   width: 210px;
   margin-left: auto;
+  padding-top: 20px;
   background-color: #ffffff;
+}
+
+.cash-drawer-display p {
+  padding: 0 20px;
 }
