@@ -15,14 +15,6 @@ body {
   color: #000000;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 35px 0 35px 0;
-}
-
 .pokemon-app-header {
   display: flex;
   flex-direction: column;
@@ -44,6 +36,18 @@ body {
     -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5,
     -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
 }
+
+/* Pokémon App */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 30px 0;
+}
+
+/* Pokémon Types */
 
 .normal {
   background-color: #b7b7aa;
