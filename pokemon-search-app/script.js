@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         const pokemonImageElement = document.querySelector('.pokemon-image');
-        pokemonImageElement.innerHTML = `<img src="${data.sprites.front_default}" alt="${data.name}">`;
+        pokemonImageElement.innerHTML = `<img src="${data.sprites.front_default}" alt="${data.name}" id="sprite">`;
 
         const typesElement = document.getElementById('types');
         data.types.forEach(type => {
