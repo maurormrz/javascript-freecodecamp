@@ -49,6 +49,23 @@ body {
 
 /* Pokémon Types */
 
+.pokemon-type {
+  margin-top: 10px;
+}
+
+#types {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#types div {
+  padding: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
 .normal {
   background-color: #b7b7aa;
 }

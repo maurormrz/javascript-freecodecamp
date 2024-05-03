@@ -72,10 +72,13 @@ document.addEventListener('DOMContentLoaded', function () {
         pokemonImageElement.innerHTML = `<img src="${data.sprites.front_default}" alt="${data.name}" id="sprite">`;
 
         const typesElement = document.getElementById('types');
+        typesElement.innerHTML = '';
+
         data.types.forEach(type => {
             const typeName = type.type.name;
             const typeElement = document.createElement('div');
             typeElement.textContent = typeName;
+            typeElement.classList.add(typeName);
             typesElement.appendChild(typeElement);
         });
     }
