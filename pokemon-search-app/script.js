@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const specialDefenseElement = document.getElementById('special-defense');
         const speedElement = document.getElementById('speed');
 
-        pokemonNameElement.textContent = data.name;
+        pokemonNameElement.textContent = firstLetter(data.name);
         pokemonIdElement.textContent = data.id;
         weightElement.textContent = data.weight;
         heightElement.textContent = data.height;
@@ -81,5 +81,9 @@ document.addEventListener('DOMContentLoaded', function () {
             typeElement.classList.add(typeName);
             typesElement.appendChild(typeElement);
         });
+    }
+
+    function firstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
     }
 });
